@@ -82,7 +82,7 @@
             
             levelCount = lvlselect.options[lvlselect.selectedIndex].value;
             
-            alert(updown, leftright, levelCount);
+            alert(updown+" "+ leftright+" "+ levelCount);
             
             
             c.rect(width/2,height/2,90,90);
