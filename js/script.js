@@ -44,6 +44,8 @@
                         case right:
                             //6, 7, 8
                             break;
+                        default:
+                        //none
                     }
             }
         }
