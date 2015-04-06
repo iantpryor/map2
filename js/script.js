@@ -52,6 +52,9 @@
                         //none
                     }
             }
+            var newX = 0;
+            var newY = 0;
+            return [newX, newY];
         }
         
         //paint the map
