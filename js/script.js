@@ -4,8 +4,8 @@
         //get the canvas
         var canvas = document.getElementById("mapcanvas");
         var c = canvas.getContext("2d");
-        var width = 1280;
-        var height = 720;
+        var width = 640;
+        var height = 360;
         var levelSize = 45;
         var leftright = "none";
         var updown = "none";
@@ -56,8 +56,8 @@
             var rand4 = Math.floor((Math.random() * 4) );
             var rand3 = Math.floor((Math.random() * 3) );
             var dir = -1;
-            var multiX = -1;
-            var multiY = -1;
+            var multiX = 0;
+            var multiY = 0;
             switch(updown){
                 case "up":
                     switch(leftright){
