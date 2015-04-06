@@ -12,7 +12,7 @@
         
         //paint the map
         function paint() {
-            c.rect(20,20,150,100);
+            c.rect(width/2,height/2,90,90);
             c.stroke();
         }
     }
