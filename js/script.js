@@ -19,37 +19,37 @@
                 case up:
                     switch(leftright){
                         case left:
-                            //18, 19, 0, 1
+                            alert("18, 19, 0, 1");
                             break;
                         case right:
-                            //3, 4, 5, 6
+                            alert("3, 4, 5, 6");
                             break;
                         default:
-                        //1, 2 ,3
+                        alert("1, 2 ,3");
                     }
                     break;
                 case down:
                     switch(leftright){
                         case left:
-                            //13, 14, 15, 16
+                            alert("13, 14, 15, 16");
                             break;
                         case right:
-                            //8, 9, 10, 11
+                            alert("8, 9, 10, 11");
                             break;
                         default:
-                        //11, 12, 13
+                        alert("11, 12, 13");
                     }
                     break;
                 default:
                     switch(leftright){
                         case left:
-                            //16, 17, 18
+                            alert("16, 17, 18");
                             break;
                         case right:
-                            //6, 7, 8
+                            alert("6, 7, 8");
                             break;
                         default:
-                        //none
+                        alert("none");
                     }
             }
             var newX = 0;
