@@ -12,17 +12,8 @@
         
         //paint the map
         function paint() {
-            for(var i = 0; i < width; i++) {
-                for(var j = 0; j < height; j++) {
-                    if(map[i][j] == 1) {
-                        c.fillStyle = "#000000";
-                        c.fillRect(i, j, 1, 1);
-                    } else {
-                        c.fillStyle = "#FFFFFF";
-                        c.fillRect(i, j, 1, 1);
-                    }
-                }
-            }
+            c.rect(20,20,150,100);
+            c.stroke();
         }
     }
 })(window, document, undefined);
