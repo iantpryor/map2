@@ -165,7 +165,7 @@
             
             levelCount = lvlselect.options[lvlselect.selectedIndex].value;
             
-            alert(updown+","+ leftright+","+ levelCount);
+            //alert(updown+","+ leftright+","+ levelCount);
             
             var current = 0;
             var prevX = width/2;
