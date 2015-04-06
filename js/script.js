@@ -131,6 +131,8 @@
         //paint the map
         function paint() {
             
+            c.clearRect ( 0 , 0 , canvas.width, canvas.height );
+            
             var lvlselect = document.getElementById("levelcount");
             var dir1 = document.getElementsByName("leftright");
             var dir2 = document.getElementsByName("updown");
