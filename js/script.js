@@ -57,6 +57,16 @@
             return [newX, newY];
         }
         
+        function drawLevel(x, y){
+            c.rect(x,y,90,90);
+            for(var i = 0; i< 3; i++){
+                for(var j = 0; j< 3; j++){
+                    c.rect((width/2) + i*30, (height/2) + j*30, 30, 30);
+                    c.stroke();
+                }
+            }
+        }
+        
         //paint the map
         function paint() {
             
@@ -87,13 +97,18 @@
             
             alert(updown+","+ leftright+","+ levelCount);
             
-            
-            c.rect(width/2,height/2,90,90);
-            for(var i = 0; i< 3; i++){
-                for(var j = 0; j< 3; j++){
-                    c.rect((width/2) + i*30, (height/2) + j*30, 30, 30);
-                    c.stroke();
-                }
+            var current = 0;
+            var prevX = width/2;
+            var prevY = height/2;
+            drawLevel(prevX, prevY);
+            while(current < levelCount){
+                var newCords = createNext(updown, leftright, prevX, prevY);
+                var newX = newCords[0];
+                var newY = newCords[1];
+                drawLevel(newX, newY);
+                prevX = newX;
+                prevY = newY;
+                current++;
             }
         }
     }
