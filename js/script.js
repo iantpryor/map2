@@ -6,7 +6,7 @@
         var c = canvas.getContext("2d");
         var width = 1280;
         var height = 720;
-        var blockSize = 16;
+        var levelSize = 45;
         var leftright = "none";
         var updown = "none";
         var levelCount = 3;
@@ -65,19 +65,19 @@
                             dir = lookupDir.ul[rand4];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                            alert("18, 19, 0, 1");
+                            //alert("18, 19, 0, 1");
                             break;
                         case "right":
                             dir = lookupDir.ur[rand4];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                            alert("3, 4, 5, 6");
+                            //alert("3, 4, 5, 6");
                             break;
                         default:
-                        dir = lookupDir.u[rand3];
+                            dir = lookupDir.u[rand3];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                        alert("1, 2 ,3");
+                        //alert("1, 2 ,3");
                     }
                     break;
                 case "down":
@@ -86,19 +86,19 @@
                             dir = lookupDir.dl[rand4];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                            alert("13, 14, 15, 16");
+                            //alert("13, 14, 15, 16");
                             break;
                         case "right":
                             dir = lookupDir.dr[rand4];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                            alert("8, 9, 10, 11");
+                            //alert("8, 9, 10, 11");
                             break;
                         default:
                         dir = lookupDir.d[rand3];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                        alert("11, 12, 13");
+                        //alert("11, 12, 13");
                     }
                     break;
                 default:
@@ -107,28 +107,28 @@
                             dir = lookupDir.l[rand3];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                            alert("16, 17, 18");
+                            //alert("16, 17, 18");
                             break;
                         case "right":
                             dir = lookupDir.r[rand3];
                             multiX = lookupOff[dir][0];
                             multiY = lookupOff[dir][1];
-                            alert("6, 7, 8");
+                            //alert("6, 7, 8");
                             break;
                         default:
-                        alert("none");
+                        //alert("none");
                     }
             }
-            var newX = prevX + multiX*30;
-            var newY = prevY + multiY*30;
+            var newX = prevX + multiX*(levelSize/3);
+            var newY = prevY + multiY*(levelSize/3);
             return [newX, newY];
         }
         
         function drawLevel(x, y){
-            c.rect(x,y,90,90);
+            c.rect(x,y,levelSize,levelSize);
             for(var i = 0; i< 3; i++){
                 for(var j = 0; j< 3; j++){
-                    c.rect((x) + i*30, (y) + j*30, 30, 30);
+                    c.rect((x) + i*(levelSize/3), (y) + j*(levelSize/3), (levelSize/3), (levelSize/3));
                     c.stroke();
                 }
             }
