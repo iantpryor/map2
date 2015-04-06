@@ -13,6 +13,11 @@
         //paint the map
         function paint() {
             c.rect(width/2,height/2,90,90);
+            for(int i = 0; i< 3; i++){
+                for(int j = 0; j< 3; j++){
+                    c.rect(width/2+i, height/2 + j, 30, 30);
+                }
+            }
             c.stroke();
         }
     }
