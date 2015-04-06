@@ -8,6 +8,7 @@
         var height = 720;
         var blockSize = 16;
         
+        
         document.getElementById("paintbtn").onclick = paint;
         
         function createNext(updown, leftright, prevX, prevY){
@@ -52,6 +53,9 @@
         
         //paint the map
         function paint() {
+            document.getElementByName("leftright");
+            document.getElementByName("updown");
+            document.getElementByName("selection");
             c.rect(width/2,height/2,90,90);
             for(var i = 0; i< 3; i++){
                 for(var j = 0; j< 3; j++){
