@@ -130,7 +130,7 @@
         
         function drawLevel(x, y){
             c.lineWidth = 10;
-            c.rect(x,y,levelSize,levelSize);
+            c.strokeRect(x,y,levelSize,levelSize);
             for(var i = 0; i< 3; i++){
                 for(var j = 0; j< 3; j++){
                     c.lineWidth = 1;
