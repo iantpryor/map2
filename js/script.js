@@ -50,8 +50,10 @@
             c.clearRect ( 0 , 0 , canvas.width, canvas.height );
             c.beginPath();
             for(var i= 0; i< canvas.width; i++){
+                var rand = Math.floor((Math.random() * 1) -1);
                 c.fillStyle = "#000000";
-                c.fillRect(i, height/2, 1, 1);
+                
+                c.fillRect(i, height/2 + rand, 1, 1);
             }
         }
         
