@@ -7,6 +7,9 @@
         var width = 1280;
         var height = 720;
         var blockSize = 16;
+        var leftright = "none";
+        var updown = "none";
+        var levelCount = 3;
         
         
         document.getElementById("paintbtn").onclick = paint;
@@ -74,7 +77,7 @@
             }
             
             var levelitem = document.getElementById("levelcount");
-            var levelCount = e.options[e.selectedIndex].value;
+            levelCount = e.options[e.selectedIndex].value;
             
             alert(updown, leftright, levelCount);
             
