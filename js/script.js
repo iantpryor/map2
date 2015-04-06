@@ -57,7 +57,7 @@
         //paint the map
         function paint() {
             
-            var levelitem = document.getElementById("levelcount");
+            var lvlselect = document.getElementById("levelcount");
             var dir1 = document.getElementsByName("leftright");
             var dir2 = document.getElementsByName("updown");
             
@@ -80,7 +80,7 @@
                 }
             }
             
-            levelCount = e.options[e.selectedIndex].value;
+            levelCount = lvlselect.options[lvlselect.selectedIndex].value;
             
             alert(updown, leftright, levelCount);
             
