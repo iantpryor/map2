@@ -53,9 +53,32 @@
         
         //paint the map
         function paint() {
-            document.getElementByName("leftright");
-            document.getElementByName("updown");
-            document.getElementByName("selection");
+            var dir1 = document.getElementByName("leftright");
+            var dir2 = document.getElementByName("updown");
+            for(var i = 0, length = dir1.length; i < length; i++){
+                if (dir1[i].checked) {
+                    // do whatever you want with the checked radio
+                    leftright = dir1[i].value;
+                    // only one radio can be logically checked, don't check the rest
+                    break;
+                }
+            }
+            
+            for(var i = 0, length = dir2.length; i < length; i++){
+                if (dir2[i].checked) {
+                    // do whatever you want with the checked radio
+                    updown = dir2[i].value;
+                    // only one radio can be logically checked, don't check the rest
+                    break;
+                }
+            }
+            
+            var levelitem = document.getElementById("levelcount");
+            var levelCount = e.options[e.selectedIndex].value;
+            
+            alert(updown, leftright, levelCount);
+            
+            
             c.rect(width/2,height/2,90,90);
             for(var i = 0; i< 3; i++){
                 for(var j = 0; j< 3; j++){
