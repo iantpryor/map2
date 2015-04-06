@@ -56,8 +56,12 @@
         
         //paint the map
         function paint() {
-            var dir1 = document.getElementByName("leftright");
-            var dir2 = document.getElementByName("updown");
+            
+            var levelitem = document.getElementById("levelcount");
+            var dir1 = document.getElementsByName("leftright");
+            var dir2 = document.getElementsByName("updown");
+            
+            
             for(var i = 0, length = dir1.length; i < length; i++){
                 if (dir1[i].checked) {
                     // do whatever you want with the checked radio
@@ -76,7 +80,6 @@
                 }
             }
             
-            var levelitem = document.getElementById("levelcount");
             levelCount = e.options[e.selectedIndex].value;
             
             alert(updown, leftright, levelCount);
