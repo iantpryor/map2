@@ -49,7 +49,10 @@
         function reset(){
             c.clearRect ( 0 , 0 , canvas.width, canvas.height );
             c.beginPath();
-        
+            for(var i= 0; i< canvas.width; i++){
+                c.fillStyle = "#000000";
+                c.fillRect(i, height/2, 1, 1);
+            }
         }
         
         function createNext(updown, leftright, prevX, prevY){
