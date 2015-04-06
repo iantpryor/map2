@@ -171,6 +171,7 @@
             var prevX = width/2;
             var prevY = height/2;
             drawLevel(prevX, prevY);
+            current++;
             while(current < levelCount){
                 var newCords = createNext(updown, leftright, prevX, prevY);
                 var newX = newCords[0];
