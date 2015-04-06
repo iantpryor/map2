@@ -16,24 +16,24 @@
         
         function createNext(updown, leftright, prevX, prevY){
             switch(updown){
-                case up:
+                case "up":
                     switch(leftright){
-                        case left:
+                        case "left":
                             alert("18, 19, 0, 1");
                             break;
-                        case right:
+                        case "right:
                             alert("3, 4, 5, 6");
                             break;
                         default:
                         alert("1, 2 ,3");
                     }
                     break;
-                case down:
+                case "down":
                     switch(leftright){
-                        case left:
+                        case "left":
                             alert("13, 14, 15, 16");
                             break;
-                        case right:
+                        case "right":
                             alert("8, 9, 10, 11");
                             break;
                         default:
@@ -42,10 +42,10 @@
                     break;
                 default:
                     switch(leftright){
-                        case left:
+                        case "left":
                             alert("16, 17, 18");
                             break;
-                        case right:
+                        case "right":
                             alert("6, 7, 8");
                             break;
                         default:
