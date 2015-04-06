@@ -168,8 +168,8 @@
             //alert(updown+","+ leftright+","+ levelCount);
             
             var current = 0;
-            var prevX = width/2;
-            var prevY = height/2;
+            var prevX = width/2 - (levelSize/2);
+            var prevY = height/2 - (levelSize/2);
             drawLevel(prevX, prevY);
             current++;
             while(current < levelCount){
