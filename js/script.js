@@ -46,6 +46,12 @@
         
         document.getElementById("paintbtn").onclick = paint;
         
+        function reset(){
+            c.clearRect ( 0 , 0 , canvas.width, canvas.height );
+            
+        
+        }
+        
         function createNext(updown, leftright, prevX, prevY){
             var rand4 = Math.floor((Math.random() * 4) );
             var rand3 = Math.floor((Math.random() * 3) );
@@ -130,8 +136,9 @@
         
         //paint the map
         function paint() {
+            reset();
             
-            c.clearRect ( 0 , 0 , canvas.width, canvas.height );
+            
             
             var lvlselect = document.getElementById("levelcount");
             var dir1 = document.getElementsByName("leftright");
