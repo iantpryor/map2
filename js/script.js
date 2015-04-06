@@ -50,7 +50,7 @@
             c.clearRect ( 0 , 0 , canvas.width, canvas.height );
             c.beginPath();
             for(var i= 0; i< canvas.width; i++){
-                var rand = 3 - Math.floor((Math.random() * 5) + 1);
+                var rand = 2 - Math.floor((Math.random() * 3) + 1);
                 c.fillStyle = "#000000";
                 c.fillRect(i, height/2 + rand, 1, 1);
             }
