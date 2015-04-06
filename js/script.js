@@ -15,6 +15,8 @@
         document.getElementById("paintbtn").onclick = paint;
         
         function createNext(updown, leftright, prevX, prevY){
+            var rand4 = Math.floor((Math.random() * 4) + 1);
+            var rand3 = Math.floor((Math.random() * 3) + 1);
             switch(updown){
                 case "up":
                     switch(leftright){
@@ -61,7 +63,7 @@
             c.rect(x,y,90,90);
             for(var i = 0; i< 3; i++){
                 for(var j = 0; j< 3; j++){
-                    c.rect((width/2) + i*30, (height/2) + j*30, 30, 30);
+                    c.rect((x) + i*30, (y) + j*30, 30, 30);
                     c.stroke();
                 }
             }
