@@ -19,7 +19,7 @@
             dl: [13,14,15,16],
             l: [16,17,18],
             ul: [18,19,0,1],
-        }
+        };
         var lookupOff{
             0: [-2,3],
             1: [-1,3],
@@ -41,7 +41,7 @@
             17: [-3,0]
             18: [-3,1]
             19: [-3,2]
-        }
+        };
         
         
         document.getElementById("paintbtn").onclick = paint;
