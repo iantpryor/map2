@@ -21,7 +21,7 @@
                         case "left":
                             alert("18, 19, 0, 1");
                             break;
-                        case "right:
+                        case "right":
                             alert("3, 4, 5, 6");
                             break;
                         default:
