@@ -8,7 +8,7 @@
         var height = 720;
         var blockSize = 16;
         
-        
+        document.getElementById("paintbtn").onclick = paint;
         
         //paint the map
         function paint() {
