@@ -5,4 +5,5 @@ map2 will generate the overall shape of a dungeon based on the input criteria.  
 ###How to use map2
 * Select an option for the up/down direction
 * Select an option for the left right direction
-* Click generate
+* Select the number of levels
+* Click paint until you find a pattern that you like
